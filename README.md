@@ -31,8 +31,20 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-source venv/bin/activate
+# Navigate to the parent directory of sight
+cd /path/to/your/Projects/
+source sight/venv/bin/activate
 python -m sight.camera_app --camera-index 0 --width 1280 --height 720
+```
+
+**Or use the setup script for a fresh installation:**
+```bash
+cd sight
+./setup.sh
+# Then run from parent directory:
+cd ..
+source sight/venv/bin/activate
+python -m sight.camera_app
 ```
 
 ## Keyboard Controls
