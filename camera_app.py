@@ -14,7 +14,7 @@ try:
 except Exception:  # pragma: no cover - handled at runtime
     mp = None  # type: ignore
 
-from .processing import PROCESSING_MODES, apply_processing
+from processing import PROCESSING_MODES, apply_processing
 
 
 WINDOW_NAME = "Sight"
